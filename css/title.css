@@ -1,0 +1,695 @@
+@charset "UTF-8";
+*::-moz-selection {
+  background-color: #FDD9B5;
+}
+*::selection {
+  background-color: #FDD9B5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  letter-spacing: 1.1px;
+  font-family: 'Roboto' , sans-serif;
+}
+
+body {
+  background: #880e4f;
+  font-size: 18px;
+  color: #FFF8E7;
+  min-width: 330px;
+  opacity: 0.89;
+}
+
+a {
+  color: #FFF8E7;
+  text-transform: uppercase;
+}
+
+sup {
+  color: #FFCAD4;
+}
+
+p {
+  text-align: justify;
+  font-size: 18px;
+  color: #FFF8E7;
+  line-height: 24px;
+}
+
+h1 {
+  word-wrap: break-word;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-transform: uppercase;
+  font-size: 36px;
+}
+
+li {
+  font-size: 18px;
+  list-style-type: none;
+}
+
+header {
+  background-color: rgba(0, 0, 0, 0.05);
+  position: fixed;
+  width: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  padding: 10px 30px;
+}
+
+header.sticky {
+  border-bottom-right-radius: 13px;
+  border-bottom-left-radius: 13px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  padding: 5px 30px;
+  background: #880e4f;
+}
+header.sticky span {
+  color: #fffdd0;
+  overflow: hidden;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+header nav a {
+  word-wrap: break-word;
+}
+
+img {
+  margin-left: 3px;
+  max-width: 100%;
+}
+
+table thead tr th, table thead tr td, table tbody tr td, table tbody tr th {
+  color: #FFF8E7;
+  font-size: 18px;
+  text-align: center;
+}
+
+abbr {
+  font-weight: bold;
+  color: #fff;
+}
+
+li p {
+  margin: 0px 0px;
+}
+
+ruby {
+  font-size: 18px;
+}
+ruby rt {
+  color: #D73F93;
+  font-weight: bold;
+  font-size: 50%;
+  text-transform: uppercase;
+}
+
+#demo {
+  background-color: #ad1457;
+  padding-left: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+
+.form-hover {
+  color: #ad1457;
+  border-radius: 3px;
+}
+.form-hover:hover {
+  color: #FFF8E7;
+}
+
+.navbar-expand-lg {
+  -webkit-box-shadow: 0px 0px 0px 0px;
+          box-shadow: 0px 0px 0px 0px;
+}
+
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url(../img/fight-like-a-girl-chinese-army-art-minimalizm-voin-kitai-by.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.mt-10 {
+  margin-top: 73px;
+}
+
+.col-r {
+  color: #A83856;
+  font-size: 22px;
+  font-weight: 700;
+  -webkit-transition: all 1.5s;
+  transition: all 1.5s;
+}
+
+.col-rd {
+  color: #FFCAD4;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: black;
+}
+
+.col-d {
+  color: #FFCAD4;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.col-w {
+  color: #FFF8E7;
+  text-transform: uppercase;
+}
+
+.col-tr {
+  color: #FFF8E7;
+  text-transform: none;
+}
+
+.col-tr-2 {
+  font-size: 14px;
+  color: #FFF8E7;
+  text-transform: none;
+}
+
+.cor-jj {
+  color: #B9336E;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.cor-h4 {
+  color: #D73F93;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.cor-jj-bg {
+  border-bottom-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #B9336E;
+  padding-right: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-right: -5px;
+  margin-left: -5px;
+}
+
+.cor-jj-bg-2 {
+  border-radius: 3px;
+  background-color: rgba(185, 51, 110, 0.1);
+  padding-right: 3px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 5px;
+  margin-right: -5px;
+  margin-left: -5px;
+  -webkit-box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px -3px 10px 1px rgba(0, 0, 0, 0.3);
+  color: #FFF8E7;
+}
+
+.text-indent-2 {
+  text-indent: 2.5em;
+}
+
+.text-up {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.text-yon {
+  font-size: 16px;
+}
+
+.text-dec-under {
+  padding: 0px 3px;
+  text-decoration: underline;
+  background-color: #7E1F4C;
+  color: #fff;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+
+.kanji-img {
+  background-color: rgba(136, 14, 79, 0.5);
+  border-radius: 20px;
+  float: right;
+}
+.kanji-img p {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding: 5px;
+  color: #880e4f;
+  font-size: 24px;
+}
+
+.kanji-img-2 {
+  float: right;
+}
+.kanji-img-2 p {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  padding: 5px;
+  color: #ad1457;
+  font-size: 24px;
+}
+
+.img-2 {
+  border-radius: 30px;
+  width: 25%;
+  margin-right: 10px;
+  padding: 5px;
+  background: #FFF8E7;
+}
+
+.container {
+  -webkit-box-shadow: 0px -13px 30px 10px #1c1c1c;
+          box-shadow: 0px -13px 30px 10px #1c1c1c;
+  background-color: rgba(28, 28, 28, 0.5);
+}
+
+.footer {
+  -webkit-box-shadow: inset 0px 5px 10px 0px black;
+          box-shadow: inset 0px 5px 10px 0px black;
+  font-size: 2em;
+  color: #ECEBBD;
+  background-color: #880e4f;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  height: 75px;
+  padding: 25px 0;
+  z-index: -1;
+}
+.footer p {
+  text-align: center;
+}
+.footer img {
+  margin-top: -40px;
+  width: 100px;
+  height: 75px;
+}
+
+.navbar .dropdown-menu a {
+  font-weight: 900;
+  font-style: 20px;
+  color: #293133;
+}
+
+.dropdown-divider {
+  border-top: 1px solid #ccc;
+}
+
+.dropdown-item .waves-effect .waves-light {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.dropdown-item, .waves-effect, .waves-light {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  color: #000;
+  background-color: #fff;
+}
+
+.form-control {
+  color: #fff;
+  border: 1px solid #880e4f;
+  background-color: #A83856;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #000;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+.box .glitch {
+  color: #FFCAD4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+}
+.box .glitch:before, .box .glitch:after {
+  content: 'Японский язык';
+  color: #FFCAD4;
+  position: absolute;
+  font-size: 16px;
+  top: 0;
+  overflow: hidden;
+  padding: 5px 5px;
+}
+.box .glitch:before {
+  left: 3px;
+  text-shadow: -3px 0 red;
+  -webkit-animation: glitch-before 3s linear 0s infinite alternate;
+          animation: glitch-before 3s linear 0s infinite alternate;
+}
+.box .glitch:after {
+  left: -3px;
+  text-shadow: -3px 0 blue;
+  -webkit-animation: glitch-after 3s linear 0s infinite alternate;
+          animation: glitch-after 3s linear 0s infinite alternate;
+}
+
+@-webkit-keyframes glitch-before {
+  0% {
+    clip: rect(60px, 350px, 89px, 30px);
+  }
+  5% {
+    clip: rect(55px, 350px, 43px, 30px);
+  }
+  10% {
+    clip: rect(143px, 350px, 76px, 30px);
+  }
+  15% {
+    clip: rect(130px, 350px, 80px, 30px);
+  }
+  20% {
+    clip: rect(145px, 350px, 40px, 30px);
+  }
+  25% {
+    clip: rect(84px, 350px, 144px, 30px);
+  }
+  30% {
+    clip: rect(19px, 350px, 129px, 30px);
+  }
+  35% {
+    clip: rect(5px, 350px, 71px, 30px);
+  }
+  40% {
+    clip: rect(89px, 350px, 140px, 30px);
+  }
+  45% {
+    clip: rect(130px, 350px, 134px, 30px);
+  }
+  50% {
+    clip: rect(144px, 350px, 48px, 30px);
+  }
+  55% {
+    clip: rect(116px, 350px, 60px, 30px);
+  }
+  60% {
+    clip: rect(70px, 350px, 150px, 30px);
+  }
+  65% {
+    clip: rect(23px, 350px, 24px, 30px);
+  }
+  70% {
+    clip: rect(36px, 350px, 6px, 30px);
+  }
+  75% {
+    clip: rect(47px, 350px, 139px, 30px);
+  }
+  80% {
+    clip: rect(110px, 350px, 99px, 30px);
+  }
+  85% {
+    clip: rect(114px, 350px, 107px, 30px);
+  }
+  90% {
+    clip: rect(56px, 350px, 4px, 30px);
+  }
+  95% {
+    clip: rect(56px, 350px, 123px, 30px);
+  }
+  100% {
+    clip: rect(116px, 350px, 67px, 30px);
+  }
+}
+
+@keyframes glitch-before {
+  0% {
+    clip: rect(60px, 350px, 89px, 30px);
+  }
+  5% {
+    clip: rect(55px, 350px, 43px, 30px);
+  }
+  10% {
+    clip: rect(143px, 350px, 76px, 30px);
+  }
+  15% {
+    clip: rect(130px, 350px, 80px, 30px);
+  }
+  20% {
+    clip: rect(145px, 350px, 40px, 30px);
+  }
+  25% {
+    clip: rect(84px, 350px, 144px, 30px);
+  }
+  30% {
+    clip: rect(19px, 350px, 129px, 30px);
+  }
+  35% {
+    clip: rect(5px, 350px, 71px, 30px);
+  }
+  40% {
+    clip: rect(89px, 350px, 140px, 30px);
+  }
+  45% {
+    clip: rect(130px, 350px, 134px, 30px);
+  }
+  50% {
+    clip: rect(144px, 350px, 48px, 30px);
+  }
+  55% {
+    clip: rect(116px, 350px, 60px, 30px);
+  }
+  60% {
+    clip: rect(70px, 350px, 150px, 30px);
+  }
+  65% {
+    clip: rect(23px, 350px, 24px, 30px);
+  }
+  70% {
+    clip: rect(36px, 350px, 6px, 30px);
+  }
+  75% {
+    clip: rect(47px, 350px, 139px, 30px);
+  }
+  80% {
+    clip: rect(110px, 350px, 99px, 30px);
+  }
+  85% {
+    clip: rect(114px, 350px, 107px, 30px);
+  }
+  90% {
+    clip: rect(56px, 350px, 4px, 30px);
+  }
+  95% {
+    clip: rect(56px, 350px, 123px, 30px);
+  }
+  100% {
+    clip: rect(116px, 350px, 67px, 30px);
+  }
+}
+@-webkit-keyframes glitch-after {
+  0% {
+    clip: rect(96px, 350px, 70px, 30px);
+  }
+  5% {
+    clip: rect(107px, 350px, 51px, 30px);
+  }
+  10% {
+    clip: rect(64px, 350px, 73px, 30px);
+  }
+  15% {
+    clip: rect(25px, 350px, 37px, 30px);
+  }
+  20% {
+    clip: rect(37px, 350px, 150px, 30px);
+  }
+  25% {
+    clip: rect(93px, 350px, 56px, 30px);
+  }
+  30% {
+    clip: rect(95px, 350px, 81px, 30px);
+  }
+  35% {
+    clip: rect(80px, 350px, 126px, 30px);
+  }
+  40% {
+    clip: rect(6px, 350px, 105px, 30px);
+  }
+  45% {
+    clip: rect(51px, 350px, 69px, 30px);
+  }
+  50% {
+    clip: rect(88px, 350px, 108px, 30px);
+  }
+  55% {
+    clip: rect(102px, 350px, 19px, 30px);
+  }
+  60% {
+    clip: rect(84px, 350px, 89px, 30px);
+  }
+  65% {
+    clip: rect(4px, 350px, 48px, 30px);
+  }
+  70% {
+    clip: rect(8px, 350px, 68px, 30px);
+  }
+  75% {
+    clip: rect(49px, 350px, 50px, 30px);
+  }
+  80% {
+    clip: rect(66px, 350px, 30px, 30px);
+  }
+  85% {
+    clip: rect(46px, 350px, 39px, 30px);
+  }
+  90% {
+    clip: rect(134px, 350px, 68px, 30px);
+  }
+  95% {
+    clip: rect(113px, 350px, 67px, 30px);
+  }
+  100% {
+    clip: rect(99px, 350px, 115px, 30px);
+  }
+}
+@keyframes glitch-after {
+  0% {
+    clip: rect(96px, 350px, 70px, 30px);
+  }
+  5% {
+    clip: rect(107px, 350px, 51px, 30px);
+  }
+  10% {
+    clip: rect(64px, 350px, 73px, 30px);
+  }
+  15% {
+    clip: rect(25px, 350px, 37px, 30px);
+  }
+  20% {
+    clip: rect(37px, 350px, 150px, 30px);
+  }
+  25% {
+    clip: rect(93px, 350px, 56px, 30px);
+  }
+  30% {
+    clip: rect(95px, 350px, 81px, 30px);
+  }
+  35% {
+    clip: rect(80px, 350px, 126px, 30px);
+  }
+  40% {
+    clip: rect(6px, 350px, 105px, 30px);
+  }
+  45% {
+    clip: rect(51px, 350px, 69px, 30px);
+  }
+  50% {
+    clip: rect(88px, 350px, 108px, 30px);
+  }
+  55% {
+    clip: rect(102px, 350px, 19px, 30px);
+  }
+  60% {
+    clip: rect(84px, 350px, 89px, 30px);
+  }
+  65% {
+    clip: rect(4px, 350px, 48px, 30px);
+  }
+  70% {
+    clip: rect(8px, 350px, 68px, 30px);
+  }
+  75% {
+    clip: rect(49px, 350px, 50px, 30px);
+  }
+  80% {
+    clip: rect(66px, 350px, 30px, 30px);
+  }
+  85% {
+    clip: rect(46px, 350px, 39px, 30px);
+  }
+  90% {
+    clip: rect(134px, 350px, 68px, 30px);
+  }
+  95% {
+    clip: rect(113px, 350px, 67px, 30px);
+  }
+  100% {
+    clip: rect(99px, 350px, 115px, 30px);
+  }
+}
+.navbar.navbar-light
+.breadcrumb
+.nav-item .nav-link, .navbar.navbar-light .navbar-nav
+.nav-item .nav-link {
+  color: #FFF8E7;
+}
+
+.navbar.navbar-light .navbar-toggler {
+  background-color: #FFF8E7;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-button {
+  -webkit-box-shadow: 0px 1px 1px #000;
+          box-shadow: 0px 1px 1px #000;
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #32312e;
+  -webkit-box-shadow: inset 0px 0px 3px #000;
+          box-shadow: inset 0px 0px 3px #000;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 6px;
+  background-color: #A83856;
+  -webkit-box-shadow: inset 0px 1px 1px #FFF8E7;
+          box-shadow: inset 0px 1px 1px #FFF8E7;
+}
+
+::-webkit-resizer {
+  -webkit-box-shadow: 0px 1px 1px #000;
+          box-shadow: 0px 1px 1px #000;
+  width: 7px;
+  height: 7px;
+}

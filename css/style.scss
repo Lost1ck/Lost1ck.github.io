@@ -1,0 +1,151 @@
+*::selection {
+	background-color: #FDD9B5;
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	font-size: 16px;
+}
+body {
+	min-width: 320px;
+	color: black;
+	background-color: rgb(251,250,246);
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+a {
+	color: black;
+	&:hover{
+		color:  #898377;
+	}
+}
+p {
+	line-height: 1.5rem;
+}
+h2 a {
+	color: black;
+}
+li {
+	list-style-type: none;
+}
+button a {
+	color: white;
+}
+header .navbar-light {
+	background-color: #fff;
+		&.navbar-brand {
+			font-size: 28px;
+			color: black;
+		}
+		&.nav-item {
+			text-transform: uppercase;
+			margin-left: 50px;
+		}
+		&.nav-item:nth-child(1) a::after,
+		&.nav-item:nth-child(2) a::after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1px;
+			background-color: #000;
+			transform:scale(0);
+			transition: all .3s;
+		}
+		&.nav-item:nth-child(1) a:hover::after,
+		&.nav-item:nth-child(2) a:hover::after {
+			transform:scale(1);
+		}
+}
+.navbar-brand {
+	font-size: 20px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+	background-color: rgba(0,0,0,.02);
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	background-color: rgba(0,0,0,.16);
+}
+.slider {
+	margin-bottom: 50px;
+}
+.post-category,
+.link-more {
+	font-size: 14px;
+	color: black;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+.ti {
+	text-indent: 1.5rem;
+}
+.mr-t {
+	margin: 100px 0 0 0;
+}
+.fosi {
+	font-size: 24px;
+}
+.bg-z {
+	background-color: rgba(0,0,0,.01);
+	box-shadow: -6px 0px 20px rgb(255,250,250),
+				6px 0px 20px rgb(255,250,250);
+}
+.col-r {
+	color:red;
+	font-size: 24px;
+}
+.border-bot {
+	border-bottom: 1px solid black;
+}
+.i-nd {
+	z-index: 9999999;
+}
+
+// Появление блока текста при наводки на текст
+
+dfn {
+  background: rgba(0,0,0,0.09);
+  border-bottom: dashed 1px rgba(0,0,0,0.3);
+  padding: 0 0.4em;
+  cursor: help;
+  font-style: normal;
+  position: relative;
+}
+dfn::after {
+  content: attr(data-info);
+  display: inline;
+  position: absolute;
+  top: 22px; left: 0;
+  opacity: 0;
+  width: 230px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.5em;
+  padding: 0.5em 0.8em;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  pointer-events: none;
+  transition: opacity 250ms, top 250ms;
+}
+dfn::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 12px; left: 20px;
+  opacity: 0;
+  width: 0; height: 0;
+  border: solid transparent 5px;
+  border-bottom-color: rgba(0,0,0,0.8);
+  transition: opacity 250ms, top 250ms;
+}
+dfn:hover 
+{z-index: 2;}
+dfn:hover::after,
+dfn:hover::before 
+{opacity: 1;}
+dfn:hover::after 
+{top: 30px;}
+dfn:hover::before 
+{top: 20px;}

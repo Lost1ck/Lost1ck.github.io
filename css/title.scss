@@ -1,0 +1,453 @@
+// Color
+$base-color: #FFF8E7;
+$color-white:#fff;
+$color-h4: #D73F93;
+$bg-col: #7E1F4C;
+$main-text: #A83856; 
+$kanji-footer-back: #880e4f;
+$colr-1: #ad1457;
+$colr-2:  #FFCAD4;
+$colr-3: #b12a5b;
+$color-jj: #B9336E;
+
+// main
+*::selection
+{
+	background-color: #FDD9B5;
+}
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	letter-spacing: 1.1px;
+	font-family: 'Roboto' , sans-serif;
+}
+body
+{
+	background: $kanji-footer-back;
+	font-size: 18px;
+	color: $base-color;
+	min-width: 330px;
+	opacity: 0.89;
+}
+a
+{
+	color: $base-color;
+	text-transform: uppercase;
+}
+sup
+{
+	color: $colr-2;
+}
+p
+{
+	text-align: justify;
+	font-size: 18px;
+	color:  $base-color;
+	line-height: 24px;
+}
+h1
+{
+	word-wrap: break-word;
+	padding-right: 5px;
+	padding-left: 5px;
+	text-transform: uppercase;
+	font-size: 36px;
+}
+li 
+{
+	font-size: 18px;
+	list-style-type: none;
+}
+header
+{
+	background-color: rgba(0,0,0,0.05);
+	position: fixed;
+	width: 100%;
+	transition: 0.6s;
+	padding: 10px 30px;
+}
+header.sticky
+{
+	border-bottom-right-radius: 13px;
+	border-bottom-left-radius: 13px;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px;
+	padding: 5px 30px;
+	background: $kanji-footer-back;
+		& span
+		{
+			color: #fffdd0;
+			overflow: hidden;
+			transition: all 1.5s; 
+		}
+}
+header nav a
+{
+	word-wrap: break-word;
+}
+img
+{
+	margin-left: 3px;
+	max-width: 100%;
+}
+table thead tr th, table thead tr td, table tbody tr td, table tbody tr th
+{
+	color: $base-color;
+	font-size: 18px;
+	text-align: center;
+}
+abbr
+{
+	font-weight: bold;
+	color: $color-white;
+}
+li p
+{
+	margin: 0px 0px;
+}
+ruby 
+{
+	font-size: 18px;
+	& rt
+	{
+		color: $color-h4;
+		font-weight: bold;
+		font-size: 50%;
+		text-transform: uppercase;
+	}	
+}
+#demo
+{
+	background-color: $colr-1;
+	padding-left: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+.form-hover
+{	
+	color: $colr-1;
+	border-radius: 3px;
+		&:hover
+		{
+			color: $base-color;
+		}
+}
+.navbar-expand-lg
+{
+	box-shadow: 0px 0px 0px 0px;
+}
+.banner
+{
+	display: flex;
+	background: url(../img/fight-like-a-girl-chinese-army-art-minimalizm-voin-kitai-by.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.mt-10
+{
+	margin-top: 73px;
+}
+// color-text
+.col-r
+{
+	color: $main-text;
+	font-size: 22px;
+	font-weight: 700;
+	transition: all 1.5s;
+	// text-transform: uppercase;
+}
+.col-rd
+{
+	color: $colr-2;
+	font-size: 20px;
+	font-weight: 600;
+	background-color: black;
+}
+.col-d
+{
+	color: $colr-2;
+	font-size: 20px;
+	font-weight: 600;
+}
+.col-w
+{
+	color: $base-color;
+	text-transform: uppercase;
+}
+.col-tr
+{
+	color: $base-color;
+	text-transform: none;
+}
+.col-tr-2
+{
+	font-size: 14px;
+	color: $base-color;
+	text-transform: none;
+}
+.cor-jj
+{
+	color: $color-jj;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.cor-h4
+{
+	color: $color-h4;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.cor-jj-bg
+{
+	border-bottom-left-radius: 6px;
+	border-top-right-radius: 6px;
+	background-color: $color-jj;
+	padding-right: 3px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	margin-right: -5px;
+	margin-left: -5px;
+}
+.cor-jj-bg-2
+{
+	border-radius: 3px;
+	background-color: rgba(185, 51, 110, .1);
+	padding-right: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	margin-right: -5px;
+	margin-left: -5px;
+	box-shadow: 0px -3px 10px 1px rgba(0,0,0, .3);
+	color: $base-color;
+}
+// text
+.text-indent-2
+{
+	text-indent: 2.5em;
+}
+.text-up
+{
+	font-size: 24px;
+	font-weight: bold;
+	color: $color-white;
+}
+.text-yon
+{
+	font-size: 16px;
+}
+.text-dec-under
+{
+	padding: 0px 3px;
+	text-decoration: underline;
+	background-color: $bg-col;
+	color: $color-white;
+	border-top-right-radius: 3px;
+	border-top-left-radius: 3px; 
+}
+// img
+.kanji-img
+{	
+	background-color: rgba(136,14,79, .5);
+	border-radius: 20px;
+	float: right;
+		& p
+		{
+			margin-left: 10px;
+			margin-bottom: 10px;
+			font-weight: 500;
+			padding: 5px;
+			color: $kanji-footer-back;
+			font-size: 24px;
+		}
+}
+.kanji-img-2
+{
+	float: right;
+		& p
+		{
+			margin-left: 10px;
+			margin-bottom: 10px;
+			font-weight: 500;
+			padding: 5px;
+			color: $colr-1;
+			font-size: 24px;
+		}
+}
+.img-2
+{
+	border-radius: 30px;
+	width: 25%;
+	margin-right: 10px;
+	padding: 5px;
+	background: #FFF8E7;
+}
+// header container footer
+.container
+{
+	box-shadow:  0px -13px 30px 10px rgba(28,28,28, 1);
+	background-color: rgba(28,28,28, .5);
+}
+.footer
+{
+	box-shadow: inset 0px 5px 10px 0px rgba(0, 0, 0, 1);
+	font-size: 2em;
+	color: 	#ECEBBD;
+	background-color: $kanji-footer-back;
+	position: sticky;
+	bottom: 0;
+	height: 75px;
+	padding: 25px 0;
+	z-index: -1;
+		& p
+		{
+			text-align: center;
+		}
+		& img
+		{
+			margin-top: -40px;
+			width: 100px;
+			height: 75px;
+		}
+}
+.navbar .dropdown-menu a
+{
+	font-weight: 900;
+	font-style: 20px;
+	color: #293133;
+}
+.dropdown-divider
+{
+	border-top: 1px solid #ccc;
+}
+.dropdown-item .waves-effect .waves-light
+{
+	color: $color-white;
+	font-weight: 600;
+	font-size: 24px;
+}
+.dropdown-item, .waves-effect, .waves-light
+{
+	color: $color-white;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+.dropdown-item.active, .dropdown-item:active
+{
+	color: #000;
+	background-color: $color-white;
+}
+.form-control
+{
+	color: #fff;
+	border: 1px solid $kanji-footer-back;
+	background-color: $main-text;
+}
+
+// animation class
+
+* {
+   margin:0;
+   padding:0;
+}
+body, html {
+   width:100%;
+   height:100%;
+}
+body {
+   background-color: #000;
+}
+.box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+   .glitch {
+      color: $colr-2;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size:16px;
+      position: relative;
+      &:before, &:after {
+         content:'Японский язык';
+         color: $colr-2;
+         position: absolute;
+         font-size: 16px;
+         top: 0;
+         overflow:hidden;
+         padding: 5px 5px;
+      }
+      &:before {
+         left:3px;
+         text-shadow: -3px 0 red;
+         animation: glitch-before 3s linear 0s infinite alternate;
+      }
+      &:after {
+         left:-3px;
+         text-shadow: -3px 0 blue;
+         animation: glitch-after 3s linear 0s infinite alternate;
+      }
+   }
+}
+
+@keyframes glitch-before {
+   $steps: 20;
+   @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+         clip: rect(random(150)+px, 350px, random(150)+px, 30px)
+      }
+   }
+}
+
+@keyframes glitch-after {
+   $steps: 20;
+   @for $i from 0 through $steps {
+      #{percentage($i*(1/$steps))} {
+         clip: rect(random(150)+px, 350px, random(150)+px, 30px)
+      }
+   }
+}
+
+// scroll etc
+.navbar.navbar-light 
+.breadcrumb 
+.nav-item .nav-link, .navbar.navbar-light .navbar-nav 
+.nav-item .nav-link
+{
+	color: $base-color;
+}
+.navbar.navbar-light .navbar-toggler
+{
+	background-color: $base-color;
+}
+// scroll
+::-webkit-scrollbar
+{
+	width: 10px;
+}
+::-webkit-scrollbar-button
+{
+	box-shadow: 0px 1px 1px #000;
+	width: 7px;
+	height: 7px;
+}
+::-webkit-scrollbar-track
+{
+	background-color:#32312e;
+	box-shadow: inset 0px 0px 3px #000;
+}
+::-webkit-scrollbar-thumb 
+{
+	border-radius: 6px;
+	background-color: $main-text;
+	box-shadow: inset 0px 1px 1px $base-color;
+}
+::-webkit-resizer
+{
+	box-shadow: 0px 1px 1px #000;
+	width:7px;
+	height:7px;
+}
